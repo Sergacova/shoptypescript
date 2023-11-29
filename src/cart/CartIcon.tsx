@@ -1,5 +1,5 @@
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import { useCartProductsSelector } from '../store/cart.slice';
+import { useCartProductsSelector } from '../store/cartSlice';
 
 const CartICon = () => {
   const products = useCartProductsSelector();

@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {productSlice} from '../store/product.slice';
-import {cartSlice} from '../store/cart.slice';
+import {productSlice} from '../store/productSlice';
+import {cartSlice} from '../store/cartSlice';
 
 const AllActions = {
 

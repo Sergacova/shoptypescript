@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useProductsSelector } from '../../store/product.slice';
+import { useProductsSelector } from '../../store/productSlice';
 import ProductsList from '../../products/ProductsList';
 
 const HomePage = () => {

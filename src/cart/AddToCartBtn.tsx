@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import useActions from '../hooks/useActions';
-import { useProductByIdSelector } from '../store/product.slice';
+import { useProductByIdSelector } from '../store/productSlice';
 interface IAddToCartBtnProps {
   id: number;
   children?: React.ReactNode;

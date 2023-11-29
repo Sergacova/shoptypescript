@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Cart from './Cart';
-import { useCartProductsSelector } from '../store/cart.slice';
+import { useCartProductsSelector } from '../store/cartSlice';
 
 
 const CartPage = () => {
