@@ -20,11 +20,10 @@ export const productSlice = createSlice({
   initialState,
   reducers: {
     setProducts: (state: ProductState, action: PayloadAction<IProduct[]>) => {
-      state.products = action.payload; // eslint-disable-line no-param-reassign
+      state.products = action.payload; 
     },
     setProduct: (state: ProductState, action: PayloadAction<IProduct>) => {
-      state.product = action.payload; // eslint-disable-line no-param-reassign
-    },
+      state.product = action.payload;}
 
   },
 });
