@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../assets/images/logo.svg';
-import CartICon from '../../../cart/CartIcon';
+import CartICon from '../../cart/CartIcon';
 const Header = () => {
 
 
