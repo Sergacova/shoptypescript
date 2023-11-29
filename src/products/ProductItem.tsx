@@ -4,7 +4,7 @@ import StarIcon from '@mui/icons-material/Star';
 import { IProduct } from '../store/productTypes';
 import AddToCartBtn from '../cart/AddToCartBtn';
 
-const ProductItem: FC<IProduct> = ({ id, title, price, rating, thumbnail }) => (
+const ProductItem: FC<IProduct> = ({ id, title, price, rating, thumbnail, stock }) => (
   <div className='product-item'>
     <div className='product-pic'>
       <Link to={`/products/${String(id)}`}>

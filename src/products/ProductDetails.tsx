@@ -3,6 +3,7 @@ import StarIcon from '@mui/icons-material/Star';
 import { useGetProductQuery } from '../store/productapi';
 import AddToCartBtn from '../cart/AddToCartBtn';
 import Loading from '../Components/Loading/Loading';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import './products.css';
 type ProductParamsId = {
   id: string;
@@ -15,7 +16,7 @@ const ProductDetails = () => {
   if (isLoading) return <Loading />;
   if (!product) return <p>Product not found</p>;
 
-  const { title, description, price, rating, category, images, id: productId } = product;
+  const { title, description, price, rating, category, stock, images, id: productId } = product;
 
   return (
     <div className='product-details'>
@@ -47,6 +48,13 @@ const ProductDetails = () => {
           <StarIcon />
           {rating}
         </div>
+        <div className='product-details__stock'>
+          <div className='product-stock'>
+            <strong>Item shop:</strong>
+<LocalGroceryStoreIcon/>
+        {stock}
+        </div>
+      </div>
       </div>
       <AddToCartBtn id={productId}>Add to cart</AddToCartBtn>
     </div>

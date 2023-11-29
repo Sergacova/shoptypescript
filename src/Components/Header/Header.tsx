@@ -19,7 +19,7 @@ const Header = () => {
           <CartICon />
         </Link>
   
-          <Link to='/login'>
+          <Link to='/Login'>
             <button type='button'>Login</button>
           </Link>
           
