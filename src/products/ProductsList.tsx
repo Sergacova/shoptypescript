@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { IProduct } from '../store/productTypes';
 import ProductItem from './ProductItem';
-
+import './products.css';
 
 interface IProductsListProps {
   products: IProduct[] | undefined;

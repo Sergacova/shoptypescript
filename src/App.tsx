@@ -5,8 +5,6 @@ import ProductsPage from './Components/ProductsPage/ProductsPage';
 import ProductDetails from './products/ProductDetails';
 import CartPage from './cart/CartPage';
 import SearchPage from './Components/Search/Search';
-
-
 import './App.css';
 
 const App = () => (

@@ -3,7 +3,7 @@ import StarIcon from '@mui/icons-material/Star';
 import { useGetProductQuery } from '../store/productapi';
 import AddToCartBtn from '../cart/AddToCartBtn';
 import Loading from '../Components/Loading/Loading';
-
+import './products.css';
 type ProductParamsId = {
   id: string;
 };
