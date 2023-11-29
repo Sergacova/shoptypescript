@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useGetProductsQuery } from '../../store/productapi';
-import useActions from '../../hooks/useActions';
+import useActions from '../../../hooks/useActions';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Loading from '../Loading/Loading';
