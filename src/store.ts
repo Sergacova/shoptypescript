@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { baseApi } from './utils/apiUrl';
 import productReducer from "./store/productSlice"
 import cartReducer from "./store/cartSlice";
+import { themeReducer } from './theme/theme-slice';
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
   
     product: productReducer,
     cart: cartReducer,
+    theme: themeReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

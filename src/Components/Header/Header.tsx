@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../assets/images/logo.svg';
 import CartICon from '../../cart/CartIcon';
-
+import { ThemeSwitcher } from '../../theme/ThemeSwitcher';
 const Header = () => {
 
 
@@ -22,7 +22,7 @@ const Header = () => {
           <Link to='/Login'>
             <button type='button'>Login</button>
           </Link>
-          
+          <ThemeSwitcher />
         
       </div>
     </header>
