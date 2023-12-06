@@ -3,11 +3,18 @@ import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../assets/images/logo.svg';
 import CartICon from '../../cart/CartIcon';
 import { ThemeSwitcher } from '../../theme/ThemeSwitcher';
-const Header = () => {
+import i18n from '../../118n/i18n';
 
+const Header = () => {
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+ };
 
   return (
     <header>
+   <p>{i18n.t('welcome')}</p>
+        <button onClick={() => changeLanguage('en')}>English</button>
+        <button onClick={() => changeLanguage('es')}>Español</button>
       <Link to='/' className='logo'>
         <img src={logo} height='40' alt='logo' />
       </Link>

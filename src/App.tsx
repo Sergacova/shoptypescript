@@ -8,6 +8,7 @@ import SearchPage from './Components/Search/Search';
 import Login from './Components/Login/Login';
 import './App.css';
 
+
 const App = () => (
   <Routes>
     <Route element={<Layout />}>
