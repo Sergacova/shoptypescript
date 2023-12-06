@@ -3,18 +3,22 @@ import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../assets/images/logo.svg';
 import CartICon from '../../cart/CartIcon';
 import { ThemeSwitcher } from '../../theme/ThemeSwitcher';
-import i18n from '../../118n/i18n';
+
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
- };
+  const { t, i18n } = useTranslation()
 
   return (
     <header>
-   <p>{i18n.t('welcome')}</p>
-        <button onClick={() => changeLanguage('en')}>English</button>
-        <button onClick={() => changeLanguage('es')}>Español</button>
+       <select onChange={(e) => i18n.changeLanguage(e.target.value)}>
+          <option>Choose language</option>
+          <option value="es">English</option>
+          <option value="ru">Russian</option>
+          <option value="en">Espanol</option>
+        </select>
+        {t('welcome')}
+  
       <Link to='/' className='logo'>
         <img src={logo} height='40' alt='logo' />
       </Link>
